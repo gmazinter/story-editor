@@ -1,37 +1,37 @@
 import { styled } from "solid-styled-components";
 import {
-	flex,
-	color,
-	space,
-	typography,
-	SpaceProps,
-	TypographyProps,
-	ColorProps,
-	FlexProps,
+  flex,
+  color,
+  space,
+  typography,
+  SpaceProps,
+  TypographyProps,
+  ColorProps,
+  FlexProps,
 } from "styled-system";
 
 const Text = styled("div")<
-	TypographyProps & SpaceProps & ColorProps & FlexProps
+  TypographyProps & SpaceProps & ColorProps & FlexProps
 >`
-	${typography}
-	${space}
+  ${typography}
+  ${space}
     ${color}
     ${flex}
 `;
 
 export const InlineText = styled(Text)`
-	display: inline;
+  display: inline;
 `;
 
 export const MaxLineText = styled(Text)<{ lines: number }>`
-	overflow: hidden;
-	/* position: relative;  */
-	line-height: 1.2em;
-	max-height: ${(props) => props.lines * 1.2}em;
-	text-align: justify;
-	/* margin-right: -1em;
+  overflow: hidden;
+  /* position: relative;  */
+  line-height: 1.2em;
+  max-height: ${(props) => props.lines * 1.2}em;
+  text-align: justify;
+  /* margin-right: -1em;
     padding-right: 1em; */
-	/* :before {
+  /* :before {
         content: '...';
         position: absolute;
         right: 0;

@@ -1,34 +1,34 @@
 import { styled } from "solid-styled-components";
 import {
-	grid,
-	flex,
-	position,
-	color,
-	space,
-	layout,
-	shadow,
-	GridProps,
-	FlexProps,
-	PositionProps,
-	ColorProps,
-	SpaceProps,
-	LayoutProps,
-	ShadowProps,
-	FlexboxProps,
+  grid,
+  flex,
+  position,
+  color,
+  space,
+  layout,
+  shadow,
+  GridProps,
+  FlexProps,
+  PositionProps,
+  ColorProps,
+  SpaceProps,
+  LayoutProps,
+  ShadowProps,
+  FlexboxProps,
 } from "styled-system";
 
 export type BoxProps = FlexboxProps &
-	GridProps &
-	FlexProps &
-	PositionProps &
-	SpaceProps &
-	LayoutProps &
-	ColorProps &
-	ShadowProps;
+  GridProps &
+  FlexProps &
+  PositionProps &
+  SpaceProps &
+  LayoutProps &
+  ColorProps &
+  ShadowProps;
 
 export default styled("div")<BoxProps>`
-	${grid}
-	${flex}
+  ${grid}
+  ${flex}
     ${position}
     ${space}
     ${layout}
