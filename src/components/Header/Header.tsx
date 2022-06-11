@@ -1,10 +1,10 @@
 import type { Component } from "solid-js";
-import { styled } from "solid-styled-components";
+import { Box } from "../primitives";
 
 export const Header: Component = () => {
-  return <HeaderContainer>i am the best editor app out there</HeaderContainer>;
+  return (
+    <Box py={6} bg={"primary"}>
+      i am the best editor app out there
+    </Box>
+  );
 };
-
-const HeaderContainer = styled("div")`
-  background-color: red;
-`;

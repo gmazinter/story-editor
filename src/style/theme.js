@@ -14,8 +14,30 @@ zIndices.modal = zIndices[7];
 zIndices.highest = zIndices[8];
 
 const theme = {
-  fontSizes: [8, 12, 14, 16, 20, 24, 32, 40, 56, 64],
-  space: [0, 4, 8, 16, 32, 64, 128, 256],
+  fontSizes: [
+    "8px",
+    "12px",
+    "14px",
+    "16px",
+    "20px",
+    "24px",
+    "32px",
+    "40px",
+    "56px",
+    "64px",
+  ],
+  space: ["2px", "4px", "8px", "10px", "12px", "16px", "24px", "32px", "64px"],
+  sizes: [
+    "2px",
+    "4px",
+    "8px",
+    "16px",
+    "32px",
+    "64px",
+    "128px",
+    "256px",
+    "512px",
+  ],
   colors: {
     primary: "rgb(220, 0, 78)",
   },
@@ -35,7 +57,7 @@ const theme = {
     medium: "0 0 20px -2px #dbdbdb",
     // large:
   },
-  radii: [0, 4, 8, 16, 32],
+  radii: ["2px", "4px", "8px", "16px", "32"],
 
   zIndices,
 };
